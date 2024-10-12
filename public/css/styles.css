@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Archive;
+    src: url(../Fonts/Archive-Regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Archive;
+    font-size: 20px;
+    background: linear-gradient(to right, #ffdf76, #f88379);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #e0f7fa;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+.login-container .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 4rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo h1 {
+    font-family: Archive;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 2.5rem;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#show-password {
+    position: absolute;
+    top: 35%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-password img {
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    font-family: Archive;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #03a9f4;
+    color: white;
+}
+
+.request-btn {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#select {
+    text-align: center;
+}
+
+.logged-in {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

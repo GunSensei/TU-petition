@@ -77,7 +77,7 @@ function submitLogin(event) {
     })
     .catch(error => {
         console.error('Error occurred:', error);
-        messageDiv.innerText = "Error occurred during login: " + error.message;
+        messageDiv.innerText = "Something went wrong";
         loginBtn.innerText = "Login";
         loginBtn.disabled = false;
     });

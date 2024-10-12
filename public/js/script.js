@@ -13,9 +13,27 @@ document.getElementById('show-password').addEventListener('click', function (eve
     }
 });
 
+
+document.getElementById('clear-name').addEventListener('click', function () {
+    document.getElementById('username').value = ''; 
+});
+
+document.getElementById('clear-password').addEventListener('click', function () {
+    document.getElementById('password').value = ''; 
+});
+
+
 function handleLogout() {
-    console.log("Logout button clicked!");
+    document.getElementById('message').innerText = '';
+
+    const loginBtn = document.getElementById('loginBtn');
+    loginBtn.innerText = 'Login';
+    loginBtn.disabled = false;
+
+    console.log('User has logged out');
 }
+
+
 
 function submitLogin(event) {
     event.preventDefault();

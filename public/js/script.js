@@ -26,7 +26,6 @@ function submitLogin(event) {
     const loginBtn = document.getElementById('loginBtn'); 
     const accessToken = `TU694c294fdf7bd8bd4cf7cbd5704b5b0b03c48cd28406758657cd1035a6f9120efe3437be04d02ec0b8ad19ed9e51d4d9`;
 
-   
     loginBtn.innerText = "Logging in...";
     loginBtn.disabled = true;
 
@@ -65,4 +64,3 @@ function submitLogin(event) {
         loginBtn.disabled = false;
     });
 }
-
